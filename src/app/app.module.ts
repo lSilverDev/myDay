@@ -15,6 +15,7 @@ import { TimeTrackingComponent } from './components/time-tracking/time-tracking.
 import { WeatherComponent } from './components/weather/weather.component';
 import { BackgroundSoundComponent } from './components/background-sound/background-sound.component';
 import { ClockComponent } from './components/clock/clock.component';
+import { FullCalendarModule } from '@fullcalendar/angular';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { ClockComponent } from './components/clock/clock.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FullCalendarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
