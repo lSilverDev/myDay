@@ -36,7 +36,7 @@ import { FullCalendarModule } from '@fullcalendar/angular';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FullCalendarModule
+    FullCalendarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

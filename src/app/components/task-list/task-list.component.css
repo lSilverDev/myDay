@@ -1,6 +1,7 @@
 .task-list__container{
   display: flex;
   flex-direction: column;
+  width: 25em;
 }
 
 .task-list__header-infos{
