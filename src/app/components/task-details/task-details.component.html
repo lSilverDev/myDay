@@ -5,15 +5,30 @@
   <form>
     <div>
       <label for="">Task name</label>
-      <input type="text">
+      <input type="text"
+        id="taskName"
+        name="taskName"
+        placeholder="Digite o nome da sua Task"
+        [(ngModel)]="task.task_name">
     </div>
     <div>
       <label for="">Date</label>
-      <input type="date">
+      <input type="date"
+        id="taskDate"
+        name="taskDate"
+        [(ngModel)]="task.date">
     </div>
     <div>
       <label for="">Description</label>
-      <textarea></textarea>
+      <input type="textarea"
+      id="taskDesc"
+      name="taskDesc"
+      placeholder="Digite a descrição da sua Task"
+      [(ngModel)]="task.desc">
     </div>
   </form>
+  <div>
+    <button (click)="salveTask()">Salvar</button>
+    <button (click)="clear()">Clear</button>
+  </div>
 </div>

@@ -1,5 +1,5 @@
 export interface task {
   task_name: string;
-  data: string;
+  date: string;
   desc: string;
 }

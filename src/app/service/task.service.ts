@@ -24,9 +24,9 @@ export class TaskService {
 
     if(!deadline) return;
 
-    await setDoc(doc(this.db, "deadlines"), {
+    await setDoc(doc(this.db, "deadlines", "huashas"), {
       title: deadline.task_name,
-      note: deadline.data,
+      note: deadline.date,
       grade: deadline.desc
     });
     return 200;
