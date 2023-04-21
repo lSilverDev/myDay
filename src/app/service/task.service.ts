@@ -12,22 +12,22 @@ export class TaskService {
 
   constructor() { }
 
-  // async deadline_getlist(){
-  //   const deadlinesCol = collection(this.db, 'deadlines');
-  //   const deadlineSnapshot = await getDocs(deadlinesCol);
-  //   const deadLineList = deadlineSnapshot.docs.map(doc => doc.data());
+  async deadline_getlist(){
+    const deadlinesCol = collection(this.db, 'deadlines');
+    const deadlineSnapshot = await getDocs(deadlinesCol);
+    const deadLineList = deadlineSnapshot.docs.map(doc => doc.data());
 
-  //   return deadLineList;
-  // }
+    return deadLineList;
+  }
 
   async save_new_deadline(deadline: task) {
 
     if(!deadline) return;
 
-    await setDoc(doc(this.db, "deadlines", "huashas"), {
-      title: deadline.task_name,
-      note: deadline.date,
-      grade: deadline.desc
+    await setDoc(doc(this.db, "deadlines", "huashasdsad"), {
+      task_name: deadline.task_name,
+      date: deadline.date,
+      desc: deadline.desc
     });
     return 200;
   }

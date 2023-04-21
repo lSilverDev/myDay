@@ -18,45 +18,10 @@
   </div>
   <hr class="line-task">
   <div class="cards__container">
-    <div class="task__card">
-      <p>Nome da tarefa</p>
-      <p>deadline</p>
-      <p>descrição</p>
-    </div>
-    <div class="task__card">
-      <p>Nome da tarefa</p>
-      <p>deadline</p>
-      <p>descrição</p>
-    </div>
-    <div class="task__card">
-      <p>Nome da tarefa</p>
-      <p>deadline</p>
-      <p>descrição</p>
-    </div>
-    <div class="task__card">
-      <p>Nome da tarefa</p>
-      <p>deadline</p>
-      <p>descrição</p>
-    </div>
-    <div class="task__card">
-      <p>Nome da tarefa</p>
-      <p>deadline</p>
-      <p>descrição</p>
-    </div>
-    <div class="task__card">
-      <p>Nome da tarefa</p>
-      <p>deadline</p>
-      <p>descrição</p>
-    </div>
-    <div class="task__card">
-      <p>Nome da tarefa</p>
-      <p>deadline</p>
-      <p>descrição</p>
-    </div>
-    <div class="task__card">
-      <p>Nome da tarefa</p>
-      <p>deadline</p>
-      <p>descrição</p>
+    <div class="task__card" *ngFor="let card of taskList">
+      <p>{{ card['task_name'] }}</p>
+      <p>{{ card['date'] }}</p>
+      <p>{{ card['desc'] }}</p>
     </div>
   </div>
 </div>
