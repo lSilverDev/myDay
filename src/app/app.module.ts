@@ -14,8 +14,6 @@ import { HomeComponent } from './views/home/home.component';
 import { ProfileComponent } from './views/profile/profile.component';
 import { DashboardComponent } from './views/dashboard/dashboard.component';
 import { TimeTrackingComponent } from './components/time-tracking/time-tracking.component';
-import { WeatherComponent } from './components/weather/weather.component';
-import { BackgroundSoundComponent } from './components/background-sound/background-sound.component';
 import { ClockComponent } from './components/clock/clock.component';
 import { FullCalendarModule } from '@fullcalendar/angular';
 import { CardComponent } from './components/card/card.component';
@@ -32,8 +30,6 @@ import { CardComponent } from './components/card/card.component';
     ProfileComponent,
     DashboardComponent,
     TimeTrackingComponent,
-    WeatherComponent,
-    BackgroundSoundComponent,
     ClockComponent,
     CardComponent
   ],

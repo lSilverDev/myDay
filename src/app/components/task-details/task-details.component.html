@@ -3,32 +3,32 @@
     <p>Nova Tarefa</p>
   </div>
   <form>
-    <div>
+    <div class="form__taskName">
       <label for="">Task name</label>
-      <input type="text"
+      <input class="task_name" type="text"
         id="taskName"
         name="taskName"
         placeholder="Digite o nome da sua Task"
         [(ngModel)]="task.task_name">
     </div>
-    <div>
+    <div  class="form__date">
       <label for="">Date</label>
-      <input type="date"
+      <input class="task_date" type="date"
         id="taskDate"
         name="taskDate"
         [(ngModel)]="task.date">
     </div>
-    <div>
+    <div  class="form__desc">
       <label for="">Description</label>
-      <input type="textarea"
+      <input class="task_desc" type="textarea"
       id="taskDesc"
       name="taskDesc"
       placeholder="Digite a descrição da sua Task"
       [(ngModel)]="task.desc">
     </div>
   </form>
-  <div>
-    <button (click)="salveTask()">Salvar</button>
-    <button (click)="clear()">Clear</button>
+  <div class="task-btn__container">
+    <button class="btn_task" (click)="salveTask()">Salvar</button>
+    <button class="btn_task" (click)="clear()">Clear</button>
   </div>
 </div>

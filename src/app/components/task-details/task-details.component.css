@@ -1,4 +1,69 @@
-.task-list__container{
+.task-detail__container{
   display: flex;
   flex-direction: column;
+  background-color: #EEEEEE;
+  height: 92vh;
+}
+
+.task-detail__header{
+  margin: 1em 1em 0 1em;
+  padding: 1em;
+  background-color: #3E54AC;
+  color: white;
+  border-radius: 10px;
+  min-width: 18em;
+}
+
+.form__taskName,
+.form__date,
+.form__desc
+{
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+  padding: 1em;
+  background-color: #BFDCE5;
+  border-radius: 10px;
+}
+
+.task_name:focus{
+  border: 2px dotted #AD7BE9;
+  outline: none;
+}
+
+.task_date:focus{
+  border: 2px dotted #AD7BE9;
+  outline: none;
+}
+
+
+.task_desc{
+  height: 10em;
+}
+
+.task_desc:focus{
+  border: 2px dotted #AD7BE9;
+  outline: none;
+}
+
+
+.task-btn__container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.btn_task{
+  height: 2em;
+  width: 5em;
+  background-color: #AD7BE9;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+
+.btn_task:hover{
+  background-color: white;
+  color: #AD7BE9;
+  border: 2px dotted #AD7BE9;
 }
