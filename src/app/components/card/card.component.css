@@ -1,0 +1,18 @@
+.task__card{
+  margin: 1em;
+  padding: 1em;
+  border-radius: 10px;
+  background-color: #BFDCE5;
+}
+
+.task__title, .task__date, .task__desc{
+  font-size: 18px;
+  margin: .5em;
+  background-color: #EEEEEE;
+  border-radius: 5px;
+  padding: .5em;
+}
+
+.task__title, .task__date{
+  text-align: center;
+}

@@ -1,0 +1,5 @@
+<div class="task__card" *ngFor="let card of taskList">
+  <p class="task__title">{{ card['task_name'] }}</p>
+  <p class="task__date">{{ card['date'] }}</p>
+  <p class="task__desc">{{ card['desc'] }}</p>
+</div>

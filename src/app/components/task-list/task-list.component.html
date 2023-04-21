@@ -18,10 +18,6 @@
   </div>
   <hr class="line-task">
   <div class="cards__container">
-    <div class="task__card" *ngFor="let card of taskList">
-      <p>{{ card['task_name'] }}</p>
-      <p>{{ card['date'] }}</p>
-      <p>{{ card['desc'] }}</p>
-    </div>
+    <app-card [taskList]="taskList"></app-card>
   </div>
 </div>
