@@ -10,13 +10,13 @@ import { SideBarComponent } from './components/side-bar/side-bar.component';
 import { TaskDetailsComponent } from './components/task-details/task-details.component';
 import { HeaderComponent } from './components/header/header.component';
 import { CalendarComponent } from './components/calendar/calendar.component';
-import { HomeComponent } from './views/home/home.component';
 import { ProfileComponent } from './views/profile/profile.component';
 import { DashboardComponent } from './views/dashboard/dashboard.component';
 import { TimeTrackingComponent } from './components/time-tracking/time-tracking.component';
 import { ClockComponent } from './components/clock/clock.component';
 import { FullCalendarModule } from '@fullcalendar/angular';
 import { CardComponent } from './components/card/card.component';
+import { LoginComponent } from './views/login/login.component';
 
 @NgModule({
   declarations: [
@@ -26,12 +26,12 @@ import { CardComponent } from './components/card/card.component';
     TaskDetailsComponent,
     HeaderComponent,
     CalendarComponent,
-    HomeComponent,
     ProfileComponent,
     DashboardComponent,
     TimeTrackingComponent,
     ClockComponent,
-    CardComponent
+    CardComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
