@@ -13,8 +13,4 @@ export class SideBarComponent {
   goToProfile(){
     this.router.navigateByUrl("/profile")
   }
-
-  goToHome(){
-    this.router.navigateByUrl("/")
-  }
 }
