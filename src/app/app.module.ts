@@ -8,9 +8,7 @@ import { AppComponent } from './app.component';
 import { TaskListComponent } from './components/task-list/task-list.component';
 import { TaskDetailsComponent } from './components/task-details/task-details.component';
 import { HeaderComponent } from './components/header/header.component';
-import { CalendarComponent } from './components/calendar/calendar.component';
 import { DashboardComponent } from './views/dashboard/dashboard.component';
-import { FullCalendarModule } from '@fullcalendar/angular';
 import { CardComponent } from './components/card/card.component';
 
 @NgModule({
@@ -19,14 +17,12 @@ import { CardComponent } from './components/card/card.component';
     TaskListComponent,
     TaskDetailsComponent,
     HeaderComponent,
-    CalendarComponent,
     DashboardComponent,
     CardComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FullCalendarModule,
     FormsModule,
     HttpClientModule
   ],

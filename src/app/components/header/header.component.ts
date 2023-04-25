@@ -16,7 +16,7 @@ export class HeaderComponent {
     let list = await this.service.deadline_getlist();
     list.forEach(element => {
       if(element['task_name'] == this.search){
-
+        alert("");
       }
     });
   }
