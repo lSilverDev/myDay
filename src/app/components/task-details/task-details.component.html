@@ -2,6 +2,7 @@
   <div class="task-detail__header">
     <p>Nova Tarefa</p>
   </div>
+  <hr class="line-task">
   <form>
     <div class="form__taskName">
       <label for="">Task name</label>
@@ -20,11 +21,7 @@
     </div>
     <div  class="form__desc">
       <label for="">Description</label>
-      <input class="task_desc" type="textarea"
-      id="taskDesc"
-      name="taskDesc"
-      placeholder="Digite a descrição da sua Task"
-      [(ngModel)]="task.desc">
+      <textarea class="task_desc" [(ngModel)]="task.desc" name="taskDesc" id="taskDesc" cols="30" rows="10" placeholder="Digite a descrição da sua Task"></textarea>
     </div>
   </form>
   <div class="task-btn__container">
