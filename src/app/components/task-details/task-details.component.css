@@ -1,8 +1,8 @@
 .task-detail__container{
-  display: flex;
   flex-direction: column;
   background-color: #EEEEEE;
-  height: 92vh;
+  height: 90vh;
+  min-width: 48.6vw;
 }
 
 .task-detail__header{

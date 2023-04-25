@@ -17,11 +17,10 @@ export class TaskDetailsComponent {
   }
 
   constructor(
-    private service: TaskService,
-    private router: Router
+    private service: TaskService
   ) {}
 
-  ngOnInit(): void {
+  ngOnInit(){
   }
 
   salveTask() {

@@ -1,7 +1,5 @@
 .task-list__container{
-  display: flex;
-  flex-direction: column;
-  min-width: 25em;
+  min-width: 50vw;
   border-left: 1px solid #AD7BE9;
   border-right: 1px solid #AD7BE9;
   padding: .5em;
