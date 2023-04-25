@@ -1,18 +1,11 @@
 <header class="header__container">
   <div class="header__input-container">
-    <input class="header__input" type="text">
+    <input class="header__input" type="text" [(ngModel)]="search" (keyup)="searchCard()">
   </div>
-
-  <div class="notifications__container">
-    <span class="material-symbols-outlined">
-      circle_notifications
-    </span>
-  </div>
-
   <div class="profile__container">
     <div class="profile__photo">
-      <img src="../../../assets/img/profilePhoto.jpg" alt="Profile Photo">
+      <img class="photo" src="../../../assets/img/profilePhoto.jpg" alt="Profile Photo">
     </div>
-    <p>Your name here</p>
+    <p>Your name</p>
   </div>
 </header>

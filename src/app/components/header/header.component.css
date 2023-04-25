@@ -38,13 +38,21 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-right: 1em;
 }
 
 .profile__photo{
+  border: 1px solid red;
   border-radius: 100%;
   height: 2.5em;
   width: 2.5em;
   margin: 1em;
-  background: red;
+  padding: .2em;
+}
+
+.photo{
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 100%;
 }
 
